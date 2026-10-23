@@ -2,11 +2,10 @@
 #include <windows.h>
 #define N 12
 
-/* SNR report for 12 Wi-Fi clients */
 int snr[N] = { 42, 38, 25, 17, 33, 45, 29, 12, 36, 41, 22, 30 };
 
 int main() {
-    SetConsoleOutputCP(65001); /* Cyrillic console output */
+    SetConsoleOutputCP(65001);
 
     int mn = 0, mx = 0, a = 0, b = 0, c = 0, s = 0;
     for (int i = 0; i < N; i++) {
